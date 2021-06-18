@@ -10,13 +10,13 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
-      title: 'Flutter Demo',
+      title: 'Meal App',
       theme: ThemeData(
-          primarySwatch: Colors.pink,
-          accentColor: Colors.amber,
-          canvasColor: Color.fromRGBO(255, 254, 229, 1),
-          visualDensity: VisualDensity.adaptivePlatformDensity,
-          textTheme: ThemeData.light().textTheme.copyWith(
+        primarySwatch: Colors.pink,
+        accentColor: Colors.amber,
+        canvasColor: Color.fromRGBO(255, 254, 229, 1),
+        visualDensity: VisualDensity.adaptivePlatformDensity,
+        textTheme: ThemeData.light().textTheme.copyWith(
               bodyText1: TextStyle(
                 color: Color.fromRGBO(20, 51, 51, 1),
               ),
@@ -26,7 +26,12 @@ class MyApp extends StatelessWidget {
               caption: TextStyle(
                 fontSize: 20,
                 fontWeight: FontWeight.bold,
-              ))),
+              ),
+            ),
+        appBarTheme: AppBarTheme(
+          brightness: Brightness.dark,
+        ),
+      ),
       // home: CategoriesScreen(),
       initialRoute: '/',
       routes: {
